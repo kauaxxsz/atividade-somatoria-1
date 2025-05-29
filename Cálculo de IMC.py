@@ -1,0 +1,41 @@
+print(40*'-')
+print('CALCULO DE IMC')
+print(40*'-')
+nome=input('| Informe seu nome: ')
+altura=float(input('| Informe sua altura: '))
+peso=float(input('| Infome seu peso: '))
+print(40*'-')
+imc= peso / (altura ** 2)
+resultado=round(imc, 2)
+
+if resultado >= 40:
+    print(40*'-')
+    print(f'| IMC: {resultado}')
+    print('| Estado do IMC: Obsidade Grau III (mórbida).')
+    print('| Recomendado: Com obesidade grau III, mudar a alimentação com apoio profissional é fundamental para preservar a saúde, ganhar qualidade de vida e reduzir riscos sérios.')
+elif resultado >= 35:
+    print(40*'-')
+    print(f'| IMC: {resultado}')
+    print('| Estado do IMC: Obesidade Grau II.')
+    print('| Recomendado: Com obesidade grau II, ajustar a alimentação é essencial para proteger a saúde, melhorar o bem-estar e prevenir complicações mais graves.')
+elif resultado >= 30:
+    print(40*'-')
+    print(f'| IMC: {resultado}')
+    print('| Estado do IMC: Obesidade Grau I.')
+    print('| Recomendado: Com obesidade grau I, melhorar a alimentação é um passo importante para cuidar da saúde, ganhar mais qualidade de vida e reduzir riscos no futuro.')
+elif resultado >= 25:
+    print(40*'-')
+    print(f'| IMC: {resultado}')
+    print('| Resultado do IMC: Sobrepeso.')
+    print('| Recomendado: Melhorar a alimentação com sobrepeso ajuda a ganhar mais saúde, disposição e prevenir problemas futuros, sem precisar focar em dietas restritivas.')
+elif resultado >= 18.5:
+    print(40*'-')
+    print(f'| IMC: {resultado} :)')
+    print('| Estado do IMC: Peso normal.')
+    print('| Recomendado: Continua assim, caso não tenha uma alimentação muito saldavel, tente melhorar comendo alguns carboidratos.')
+else:
+    print(40*'-')
+    print(f'| IMC: {resultado}')
+    print('| Estado do IMC: ABAIXO DO PESO')
+    print('| Recomendado: Melhore sua alimentação com refeições nutritivas e frequentes, e procure um nutricionista para ganhar peso de forma saudável.')
+print(40*'-')
